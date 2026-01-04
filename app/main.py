@@ -26,6 +26,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",  # Next.js dev server
         "http://127.0.0.1:3000",
+        "https://todo-evolution-liart.vercel.app",  # Vercel production
+        "https://todo-evolution.vercel.app",  # Vercel alias (if available)
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
